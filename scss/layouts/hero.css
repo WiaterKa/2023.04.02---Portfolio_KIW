@@ -1,0 +1,29 @@
+.hero {
+  width: 110rem;
+  height: auto;
+}
+
+.hero .hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.9rem;
+}
+
+.hero .hero-nav .logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.0444444rem;
+}
+
+.hero .hero-nav .social-container {
+  display: flex;
+  justify-content: space-around;
+  width: 19.5rem;
+}
+
+.hero .h1-hero {
+  @in;
+}

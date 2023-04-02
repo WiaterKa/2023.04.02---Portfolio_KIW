@@ -1,0 +1,212 @@
+.contact-wrapper {
+  margin-inline: 16.5rem;
+  max-width: 111rem;
+  background-color: $color-third;
+  height: auto;
+  overflow: hidden;
+
+  @media screen and (min-width: 1400px) {
+    margin-inline: auto;
+  }
+
+  @media screen and (max-width: 1100px) {
+    margin-inline: 3rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin-inline: 1.6rem;
+  }
+}
+
+.contact {
+  width: 100%;
+  background-color: $color-third;
+  position: relative;
+
+  .ring {
+    width: 530px;
+    height: 130px;
+    position: absolute;
+    z-index: 2;
+    top: 26rem;
+    left: -24rem;
+    @media screen and (max-width: 900px) {
+      top: 3rem;
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    padding-top: 8.4rem;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+    width: 100%;
+
+    @media screen and (max-width: 1330px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .txt-box {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+
+      @media screen and (max-width: 1330px) {
+        align-items: center;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+
+      .h2-primary {
+        @include headerSecondary();
+      }
+
+      .p-primary {
+        padding-top: 3.6rem;
+        @include primaryPar();
+
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  form {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.0222222rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    height: 32.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    outline: none;
+    width: 50%;
+    position: relative;
+
+    @media screen and (max-width: 1330px) {
+      align-items: center;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      height: auto;
+    }
+
+    input,
+    textarea {
+      background-color: $color-third;
+      border: none;
+      border-bottom: 1px solid $color-primary;
+      width: 80%;
+      color: $color-primary;
+      text-transform: uppercase;
+      padding-bottom: 2rem;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+    }
+
+    textarea {
+      height: 9rem;
+    }
+
+    .alert-box {
+      position: absolute;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      letter-spacing: -0.0166667rem;
+      color: #ff6f5b;
+      right: 0;
+      bottom: 15rem;
+      text-transform: none;
+      display: none;
+
+      @media screen and (min-width: 900px) and (max-width: 1330px) {
+        right: 5rem;
+      }
+
+      @media screen and (max-width: 900px) {
+        bottom: 23rem;
+      }
+    }
+
+    svg {
+      position: absolute;
+      right: 0;
+      bottom: 18rem;
+      display: none;
+
+      @media screen and (min-width: 900px) and (max-width: 1330px) {
+        right: 5rem;
+      }
+
+      @media screen and (max-width: 900px) {
+        bottom: 27rem;
+      }
+    }
+
+    .p-secondary {
+      @include secondaryPar();
+      outline: none;
+      width: 14rem;
+      cursor: pointer;
+      &:hover {
+        color: $color-fourth;
+      }
+
+      @media screen and (max-width: 900px) {
+        align-self: flex-end;
+        margin-bottom: 8rem;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $color-primary;
+    padding-top: 4.7rem;
+    padding-bottom: 9.2rem;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .logo {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      letter-spacing: -0.0444444rem;
+    }
+
+    .social-container {
+      display: flex;
+      justify-content: space-around;
+      width: 19.5rem;
+
+      svg {
+        color: rgb(255, 255, 255);
+
+        &:hover {
+          color: $color-fourth;
+        }
+      }
+    }
+  }
+}
