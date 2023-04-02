@@ -112,6 +112,10 @@
           gap: 3rem;
         }
 
+        a {
+          text-decoration: none;
+        }
+
         .p-secondary {
           @include secondaryPar();
           padding-top: 2rem;

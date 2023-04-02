@@ -53,11 +53,12 @@
     max-width: 44.5rem;
     max-height: 72rem;
     position: absolute;
+    top: 13rem;
     right: 0;
-    top: -1rem;
+    border-radius: 0.5rem;
     z-index: -20;
 
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1200px) {
       max-height: 60rem;
       max-width: 32.2rem;
     }
@@ -85,7 +86,9 @@
 
   .h1-hero {
     @include headerMain();
-    width: 75rem;
+    width: 50rem;
+    mix-blend-mode: difference;
+    line-height: 9.8rem;
 
     @media screen and (max-width: 1330px) {
       width: 50rem;
@@ -96,10 +99,10 @@
       padding-top: 4rem;
       width: 100%;
     }
-
-    .name {
-      border-bottom: solid 5px $color-fourth;
-    }
+  }
+  .name {
+    border-bottom: solid 5px $color-fourth;
+    // mix-blend-mode: normal;
   }
 
   .p-primary {
@@ -123,5 +126,3 @@
     }
   }
 }
-
-// RWD TABLETS
