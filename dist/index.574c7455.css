@@ -358,13 +358,13 @@ body {
   }
 }
 
-.stack {
+.stack-section {
   width: 100%;
   height: auto;
   padding-bottom: 14rem;
 }
 
-.stack .table-container {
+.stack-section .table-container {
   width: 100%;
   border-top: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
@@ -375,20 +375,20 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-  .stack .table-container {
+  .stack-section .table-container {
     grid-template-columns: 50% 50%;
     padding-top: 5rem;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .stack .table-container {
+  .stack-section .table-container {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 100%;
   }
 }
 
-.stack .table-container .table-box {
+.stack-section .table-container .table-box {
   text-align: center;
   flex-direction: column;
   align-items: center;
@@ -398,7 +398,7 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-  .stack .table-container .table-box {
+  .stack-section .table-container .table-box {
     align-items: flex-start;
     margin-top: 0;
     margin-bottom: 5rem;
@@ -406,94 +406,94 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .stack .table-container .table-box {
+  .stack-section .table-container .table-box {
     align-items: center;
   }
 }
 
-.stack .table-container .tb2 {
+.stack-section .table-container .tb2 {
   grid-column: 2 / 3;
   grid-row-start: 1;
 }
 
 @media screen and (max-width: 900px) {
-  .stack .table-container .tb2 {
+  .stack-section .table-container .tb2 {
     grid-area: 2 / 1 / 3 / 2;
   }
 }
 
-.stack .table-container .tb3 {
+.stack-section .table-container .tb3 {
   grid-column: 3 / 4;
   grid-row-start: 1;
 }
 
 @media screen and (max-width: 1100px) {
-  .stack .table-container .tb3 {
+  .stack-section .table-container .tb3 {
     grid-column: 1 / 2;
     grid-row-start: 2;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .stack .table-container .tb3 {
+  .stack-section .table-container .tb3 {
     grid-area: 3 / 1 / 4 / 2;
   }
 }
 
-.stack .table-container .tb4 {
+.stack-section .table-container .tb4 {
   grid-area: 2 / 1 / 3 / 2;
 }
 
 @media screen and (max-width: 1100px) {
-  .stack .table-container .tb4 {
+  .stack-section .table-container .tb4 {
     grid-column: 2 / 3;
     grid-row-start: 2;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .stack .table-container .tb4 {
+  .stack-section .table-container .tb4 {
     grid-area: 4 / 1 / 5 / 2;
   }
 }
 
-.stack .table-container .tb5 {
+.stack-section .table-container .tb5 {
   grid-column: 2 / 3;
   grid-row-start: 2;
 }
 
 @media screen and (max-width: 1100px) {
-  .stack .table-container .tb5 {
+  .stack-section .table-container .tb5 {
     grid-column: 1 / 2;
     grid-row-start: 3;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .stack .table-container .tb5 {
+  .stack-section .table-container .tb5 {
     grid-area: 5 / 1 / 6 / 2;
   }
 }
 
-.stack .table-container .tb6 {
+.stack-section .table-container .tb6 {
   grid-column: 3 / 4;
   grid-row-start: 2;
 }
 
 @media screen and (max-width: 1100px) {
-  .stack .table-container .tb6 {
+  .stack-section .table-container .tb6 {
     grid-column: 2 / 3;
     grid-row-start: 3;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .stack .table-container .tb6 {
+  .stack-section .table-container .tb6 {
     grid-area: 6 / 1 / 7 / 2;
   }
 }
 
-.stack .table-container .table_bg {
+.stack-section .table-container .table_bg {
   letter-spacing: -.15px;
   font-size: 4.8rem;
   font-style: normal;
@@ -501,7 +501,7 @@ body {
   line-height: 5.6rem;
 }
 
-.stack .table-container .table_sm {
+.stack-section .table-container .table_sm {
   color: #d9d9d9;
   font-family: Space Grotesk;
   font-size: 1.8rem;
@@ -567,6 +567,12 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 1100px) {
+  .projects .projects-container {
+    gap: 2rem;
+  }
+}
+
 .projects .projects-container .project-box {
   max-width: 50rem;
   max-height: 48.7rem;
@@ -575,13 +581,6 @@ body {
   align-items: flex-start;
   display: flex;
   position: relative;
-}
-
-@media screen and (max-width: 1330px) {
-  .projects .projects-container .project-box {
-    max-width: 34.2rem;
-    max-height: 39.8rem;
-  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -635,15 +634,8 @@ body {
   align-items: center;
   display: flex;
   position: absolute;
-  top: -7.2rem;
+  top: -.2rem;
   left: 0;
-}
-
-@media screen and (max-width: 1330px) {
-  .projects .projects-container .project-box .project-links {
-    height: 64%;
-    top: -7.3rem;
-  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -653,7 +645,7 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
     gap: 3rem;
-    top: 7rem;
+    top: 11rem;
     left: 0;
   }
 }
